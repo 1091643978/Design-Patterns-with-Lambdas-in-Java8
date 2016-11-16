@@ -1,6 +1,4 @@
-# Design Patterns with Lambdas in Java 8 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[![Build Status](https://travis-ci.org/manoelcampos/Design-Patterns-with-Lambdas-in-Java8.png?branch=master)](https://travis-ci.org/manoelcampos/Design-Patterns-with-Lambdas-in-Java8)
+# Design Patterns with Lambdas in Java 8 [![Build Status](https://travis-ci.org/manoelcampos/Design-Patterns-with-Lambdas-in-Java8.png?branch=master)](https://travis-ci.org/manoelcampos/Design-Patterns-with-Lambdas-in-Java8) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4bedb98956b94c5d9c5754ee3214287f)](https://www.codacy.com/app/manoelcampos/Design-Patterns-with-Lambdas-in-Java8?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=manoelcampos/Design-Patterns-with-Lambdas-in-Java8&amp;utm_campaign=Badge_Grade) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This project aims to provide implementations of different Design Patterns using Lambda expressions in Java 8.
 A Maven project with the current implemented patterns is provided in the [src](src) directory.
