@@ -1,23 +1,30 @@
 # Design Patterns with Lambdas in Java 8
 
-Inpired in [Design Patterns In Kotlin](https://github.com/dbacinski/Design-Patterns-In-Kotlin) by [Dariusz Baciński](https://twitter.com/dbacinski).
+This project aims to provide implementations of different Design Patterns using Lambda expressions in Java 8.
+A Maven project with the current implemented patterns is provided in the [src](src) directory.
+Each pattern implementation is provided into a specific package containing an usage example named Exanmple.java.
+
+The table of contents below provides direct links to the currently implemented patterns.
+
+This project was inpired and adapted from [Design Patterns In Kotlin](https://github.com/dbacinski/Design-Patterns-In-Kotlin) by [Dariusz Baciński](https://twitter.com/dbacinski).
+It's a working in progress and [contributions](CONTRIBUTING.md) are welcome! :smile:
 
 ## Table of Contents
 
-* [Behavioral Patterns](#behavioral)
-	* [Observer / Listener](#observer--listener)
-	* [Strategy](#strategy)
-	* [Command](#command)
-	* [State](#state)
-	* [Chain of Responsibility](#chain-of-responsibility)
-	* [Visitor](#visitor)
-* [Creational Patterns](#creational)
-	* [Builder / Assembler](#builder--assembler)
-	* [Factory Method](#factory-method)
-	* [Singleton](#singleton)
-	* [Abstract Factory](#abstract-factory)
-* [Structural Patterns](#structural)
-	* [Adapter](#adapter)
-	* [Decorator](#decorator)
-	* [Facade](#facade)
-	* [Protection Proxy](#protection-proxy)
+* Behavioral Patterns
+	* [Observer / Listener](/src/main/java/designpatterns/listener)
+	* [Strategy](src/main/java/designpatterns/strategy)
+	* Command
+	* State
+	* Chain of Responsibility
+	* Visitor
+* Creational Patterns
+	* Builder / Assembler
+	* Factory Method
+	* Singleton
+	* Abstract Factory
+* Structural Patterns
+	* Adapter
+	* Decorator
+	* Facade
+	* Protection Proxy
