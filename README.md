@@ -40,7 +40,7 @@ It's a working in progress and [contributions](CONTRIBUTING.md) are welcome! :sm
 ## Observer / Listener
 [Full source code](/src/main/java/designpatterns/listener)
 
-```
+```java
 /**
  * The interface to be used by Observable objects to notify Observers
  * when specific events happen. 
@@ -51,7 +51,7 @@ public interface Listener<T extends Object, U extends Object> {
 }
 
 /**
- * Your Observable class, that will have a meaningful name such as "Car" or something else.
+ * Your Observable class, that you usually define with a meaningful name such as "Car", "Student" or anything else.
 */
 public class MyObservable {    
     /*
@@ -90,7 +90,7 @@ public class MyObservable {
 
 ### Listener Usage
 
-```
+```java
 /**
  * Implemention of a Observer class that will be notified when some events in Observable objects happen. 
 */
