@@ -1,18 +1,24 @@
 # Design Patterns with Lambdas in Java 8 [![Build Status](https://travis-ci.org/manoelcampos/Design-Patterns-with-Lambdas-in-Java8.png?branch=master)](https://travis-ci.org/manoelcampos/Design-Patterns-with-Lambdas-in-Java8) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4bedb98956b94c5d9c5754ee3214287f)](https://www.codacy.com/app/manoelcampos/Design-Patterns-with-Lambdas-in-Java8?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=manoelcampos/Design-Patterns-with-Lambdas-in-Java8&amp;utm_campaign=Badge_Grade) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project aims to provide implementations of different Design Patterns using Lambda expressions in Java 8.
-A Maven project with the current implemented patterns is provided in the [src](src) directory.
-Each pattern implementation is provided into a specific package containing an usage example named Exanmple.java.
+This project aims to provide implementations of different Design Patterns using Lambda expressions and functional programming in Java 8.
+A Maven project with the current implemented patterns is available in the [src](src) directory.
+Each pattern implementation is provided into a specific package containing an usage example.
 
 This page provides a simplified and general purpose implementation of such patterns with an usage example,
-considering that you understand how each pattern works. It is not the intend of this project to explain
-how the patterns work. The examples provided in this page just have essential comments and ommits
+considering that you understand how each pattern works. It is not the intent of this project to explain
+the patterns. To learn about Design Patterns, you can see some references below:
+
+- <https://en.wikipedia.org/wiki/Software_design_pattern>
+- <https://sourcemaking.com/design_patterns>
+
+
+The examples provided in this page just have essential comments and ommits
 parts of the code that aren't essential to the implemented understanding, such as constructors,
 getters and setters. To see a complete, comprehensively documented and ready-to-compile code, 
 follow the link to the source code provided for each current implemented pattern.
 
 This project was inpired and adapted from [Design Patterns In Kotlin](https://github.com/dbacinski/Design-Patterns-In-Kotlin) by [Dariusz Baciński](https://twitter.com/dbacinski).
-It's a working in progress and [contributions](CONTRIBUTING.md) are welcome! :smile:
+It is work in progress and [contributions](CONTRIBUTING.md) are welcome! :smile:
 
 # Table of Contents
 
@@ -51,7 +57,8 @@ public interface Listener<T extends Object, U extends Object> {
 }
 
 /**
- * Your Observable class, that you usually define with a meaningful name such as "Car", "Student" or anything else.
+ * Your Observable class, that you usually define with a meaningful 
+ * name such as "Car", "Student" or anything else.
 */
 public class MyObservable {    
     /*
@@ -92,7 +99,8 @@ public class MyObservable {
 
 ```java
 /**
- * Implemention of a Observer class that will be notified when some events in Observable objects happen. 
+ * Implemention of a Observer class that will be notified when 
+ * some events in Observable objects happen. 
 */
 public class Observer {
     public static void main(String[] args) {
