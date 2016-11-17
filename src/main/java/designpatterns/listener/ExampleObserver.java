@@ -1,10 +1,12 @@
 package designpatterns.listener;
 
 /**
- * An example that shows how to use lambda expressions to provide
- * an implementation for {@link Car} listeners.
+ * An example that shows how to implement a Observer class that will be notified when some events happen
+ * in a given Observable object (a  {@link Car} in this case).
+ * The {@link Car} listeners that notifies this Observer when
+ * specific events happen are implemented using lambda expressions.
  * 
- * <p>This {@link Example} class takes the role of an Observer that will
+ * <p>This {@link ExampleObserver} class takes the role of an Observer that will
  * be notified by {@link Car} objects being observed, when
  * specific events happen (namely car's start and stop).
  * This notification happens by executing the lambda expression 
@@ -13,7 +15,7 @@ package designpatterns.listener;
  * 
  * @author Manoel Campos da Silva Filho
  */
-public class Example {
+public class ExampleObserver {
     public static void main(String[] args) {
         Car car1 = new Car(1);
         Car car2 = new Car(2);

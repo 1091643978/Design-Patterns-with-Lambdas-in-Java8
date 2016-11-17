@@ -58,7 +58,7 @@ public class Car {
      */
     public void start(){
         this.started = true;
-        onCarStart.notify(this, System.currentTimeMillis());
+        onCarStart.notifyObserver(this, System.currentTimeMillis());
     }
     
     /**
@@ -66,7 +66,7 @@ public class Car {
      */
     public void stop(){
         this.started = false;
-        onCarStop.notify(this, System.currentTimeMillis());
+        onCarStop.notifyObserver(this, System.currentTimeMillis());
     }
 
     public void setOnCarStart(Listener<Car, Long> onCarStart) {
