@@ -70,9 +70,9 @@ public class MyObservable {
     private Listener<MyObservable, Long> onEventBarIsFired;
     
     public MyObservable(){
-		/*
-		Initialize the event listeners with empty lambdas to avoid NullPointerException's.		
-		*/
+	    /*
+	    Initialize the event listeners with empty lambdas to avoid NullPointerException's.		
+	    */
         this.onEventFooIsFired = (observable, time) -> {};
         this.onEventBarIsFired = (observable, time) -> {};
     }
@@ -81,7 +81,7 @@ public class MyObservable {
 	 * A foo method that fires a foo event.
 	*/
 	public void foo(){
-		//Include your code here!
+	    //Include your code here!
         onEventFooIsFired.notifyObserver(this, System.currentTimeMillis());
     }
     
@@ -89,7 +89,7 @@ public class MyObservable {
 	 * A bar method that fires a bar event.
 	*/
     public void bar(){
-		//Include your code here!
+	    //Include your code here!
         onEventBarIsFired.notifyObserver(this, System.currentTimeMillis());
     }    
 }
@@ -106,8 +106,8 @@ public class Observer {
     public static void main(String[] args) {
         MyObservable observable1 = new MyObservable();
         
-		observable1.setOnEventFooIsFired((o, t) -> System.out.println(o + " foo method fired at time " + t));
-		observable1.setOnEventBarIsFired((o, t) -> System.out.println(o + " bar method fired at time " + t));
+	    observable1.setOnEventFooIsFired((o, t) -> System.out.println(o + " foo method fired at time " + t));
+	    observable1.setOnEventBarIsFired((o, t) -> System.out.println(o + " bar method fired at time " + t));
                 
 		//Call the methods that will make the Listener to notify the Observer 
         observable1.foo();
