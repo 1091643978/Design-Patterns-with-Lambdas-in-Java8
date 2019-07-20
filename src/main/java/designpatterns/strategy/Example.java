@@ -1,5 +1,7 @@
 package designpatterns.strategy;
 
+import com.google.common.base.CaseFormat;
+
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -9,6 +11,10 @@ import java.util.stream.Stream;
  */
 public class Example {
     public static void main(String[] args) {
+
+        String camel=CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.LOWER_CAMEL, "THIS_IS_AN_EXAMPLE_STRING");
+
+        System.out.println(camel);
         new Example();
     }
     
@@ -39,7 +45,7 @@ public class Example {
         return Stream.of(s.split(" "))
                 .filter(word -> !word.isEmpty())
                 .map(word -> word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase())
-                .reduce((word1, word2) -> word1 + " " + word2)
+                .reduce((word1, word2) -> word1 +   word2)
                 .orElse("");
     }
 }
